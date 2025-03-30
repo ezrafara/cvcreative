@@ -1,0 +1,245 @@
+* {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+body {
+    background-image: url(image/bg.png);
+    font-family: "Poppins", sans-serif;
+    background-position: center;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.header-sect {
+    /* background-color: aqua; */
+    margin-bottom: 150px;
+}
+
+.foto-ezra {
+    max-width: 100%;
+    max-height: 100%;
+    flex-shrink: 0;
+    position: absolute;
+    left: 880px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 5px;
+}
+
+.name {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 100px;
+    margin-left: 120px;
+}
+
+.sub-name {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+.desc {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 600px;
+}
+
+.ntm {
+    color: #ffffff;
+    background-color: black;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 600px;
+    width: fit-content;
+}
+
+.kontak-tabel {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.kontak-tabel td {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.wa-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.gmail-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.ig-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.info-sect {
+    background-color: aquamarine;
+    display: flex; /* Mengaktifkan flexbox */
+    justify-content: flex-start; /* Mengatur elemen ke kiri */
+    align-items: center; /* Membuat elemen sejajar secara vertikal */
+    padding: 20px; /* Tambahkan padding agar lebih rapi */
+}
+
+.info-content {
+    display: flex; /* Menjadikan lokasi dan organisasi berdampingan */
+    gap: 5px; /* Beri jarak antar elemen */
+    margin-top: 35px;
+    padding: 50px 20px 20px 20px;
+    align-items: flex-start;
+    
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location img {
+    width: 100%; /* Sesuaikan ukuran ikon */
+    height: 100%;
+}
+
+.organ {
+    display: flex;
+    align-items: center;
+}
+
+.organ img {
+    width: 100%; /* Sesuaikan ukuran ikon */
+    height: 100%;
+}
+
+.exp {
+    display: flex;
+    align-items: center;
+}
+
+.exp img {
+    width: 100%; /* Sesuaikan ukuran ikon */
+    height: 100%;
+}
+
+.edu {
+    display: flex;
+    align-items: center;
+}
+
+.edu img {
+    width: 100%; /* Sesuaikan ukuran ikon */
+    height: 100%;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+}
+
+.skill img {
+    width: 100%; /* Sesuaikan ukuran ikon */
+    height: 100%;
+}
+
+/* ------------------------------------ */
+
+.container-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 0 20px;
+    align-items: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mycontainer {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Skills container khusus */
+.skills-container {
+    grid-column: 1; /* Letakkan di kolom pertama */
+    grid-row: 2; /* Baris kedua */
+    margin-top: 120px;
+}
+
+/* Organization dan Experience mengambil 2 baris */
+.mycontainer:nth-child(2),
+.mycontainer:nth-child(3) {
+    grid-row: span 2;
+    height: 100%;
+}
+
+.mycontainer h2 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.content-item {
+    margin-bottom: 20px;
+    break-inside: avoid; /* Mencegah pemotongan item */
+}
+
+.content-item strong {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.content-item p {
+    margin: 5px 0;
+    line-height: 1.4;
+    word-wrap: break-word; /* Memastikan teks panjang akan wrap */
+    overflow-wrap: break-word;
+}
+
+.date {
+    color: #666;
+    font-size: 14px;
+}
